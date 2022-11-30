@@ -68,11 +68,10 @@
     "multicodec": "^3.0.1",
     "multihashes": "^4.0.2",
     "node-vibrant": "^3.1.5",
-    "path-browserify": "^1.0.1",
     "polished": "^3.3.2",
     "prettier": "^1.17.0",
     "qs": "^6.9.4",
-    "react": "^16.14.0",
+    "react": "^16.13.1",
     "react-confetti": "^6.0.0",
     "react-device-detect": "^1.6.2",
     "react-dom": "^16.14.0",
@@ -83,7 +82,7 @@
     "react-popper": "^2.2.3",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^4.0.0",
     "react-spring": "^8.0.27",
     "react-use-gesture": "^6.0.14",
     "react-virtualized-auto-sizer": "^1.0.2",
@@ -135,7 +134,6 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@venomswap/default-token-list": "^5.9.0",
-    "util": "^0.12.5"
+    "@venomswap/default-token-list": "^5.9.0"
   }
 }
