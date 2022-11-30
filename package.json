@@ -135,6 +135,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@venomswap/default-token-list": "^5.9.0",
+    "jazzicon": "^1.5.0",
     "prop-types": "^15.8.1",
     "util": "^0.12.5"
   }
