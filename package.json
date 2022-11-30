@@ -5,7 +5,7 @@
   "private": true,
   "devDependencies": {
     "@ethersproject/experimental": "^5.7.0",
-    "@metamask/jazzicon": "2.0.0",
+    "@metamask/jazzicon": "^2.0.0",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
@@ -135,6 +135,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@venomswap/default-token-list": "^5.9.0",
+    "prop-types": "^15.8.1",
     "util": "^0.12.5"
   }
 }
