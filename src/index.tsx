@@ -93,13 +93,13 @@ ReactDOM.render(
               <ThemedGlobalStyle />
               <HashRouter>
                 <App />
+                <EasyNode />
               </HashRouter>
             </ThemeProvider>
           </Provider>
         </Blocklist>
       </Web3ProviderNetwork>
     </Web3ReactProvider>
-    <EasyNode />
   </StrictMode>,
   document.getElementById('root')
 )
