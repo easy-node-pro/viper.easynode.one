@@ -1,7 +1,7 @@
 {
   "background_color": "#fff",
   "display": "standalone",
-  "homepage_url": "https://viper.exchange",
+  "homepage_url": "https://viper.easynode.one",
   "icons": [
     {
       "src": "./images/192x192_App_Icon.png",
@@ -17,7 +17,7 @@
     }
   ],
   "orientation": "portrait",
-  "name": "Viperswap",
+  "name": "Viperswap by Easy Node",
   "short_name": "Viperswap",
   "start_url": ".",
   "theme_color": "#00a17e"
