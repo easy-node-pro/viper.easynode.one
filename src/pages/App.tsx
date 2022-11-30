@@ -81,6 +81,30 @@ const Marginer = styled.div`
   margin-top: 5rem;
 `
 
+const EasyNode = () => {
+  return (
+    <>
+      <EasyNodeBox />
+    </>
+  )
+}
+
+function EasyNodeBox() {
+  return (
+    <>
+      This clone of the Viperswap UI provided by{' '}
+      <a href="https://easynode.pro" target="_blank" rel="noreferrer">
+        EasyNode.PRO
+      </a>
+      . Feel free to review the{' '}
+      <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
+        github repo fork
+      </a>
+      .
+    </>
+  )
+}
+
 function TopLevelModals() {
   const open = useModalOpen(ApplicationModal.ADDRESS_CLAIM)
   const toggle = useToggleModal(ApplicationModal.ADDRESS_CLAIM)
@@ -179,6 +203,7 @@ export default function App() {
             </Switch>
           </Web3ReactManager>
           <Marginer />
+          <EasyNode />
         </BodyWrapper>
       </AppWrapper>
     </Suspense>
