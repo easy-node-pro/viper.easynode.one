@@ -68,6 +68,7 @@
     "multicodec": "^3.0.1",
     "multihashes": "^4.0.2",
     "node-vibrant": "^3.1.5",
+    "path-browserify": "^1.0.1",
     "polished": "^3.3.2",
     "prettier": "^1.17.0",
     "qs": "^6.9.4",
