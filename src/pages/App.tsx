@@ -96,6 +96,7 @@ function EasyNodeBox() {
       <a href="https://easynode.pro" target="_blank" rel="noreferrer">
         EasyNode.PRO
       </a>
+      <br />
       Feel free to review the{' '}
       <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
         github repo fork
