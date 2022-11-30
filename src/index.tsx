@@ -17,8 +17,9 @@ import ListsUpdater from './state/lists/updater'
 import MulticallUpdater from './state/multicall/updater'
 import TransactionUpdater from './state/transactions/updater'
 import UserUpdater from './state/user/updater'
-import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
+import ThemeProvider, { TYPE, FixedGlobalStyle, ThemedGlobalStyle } from './theme'
 import getLibrary from './utils/getLibrary'
+import styled from 'styled-components'
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
@@ -55,6 +56,31 @@ function Updaters() {
   )
 }
 
+const EasyNode = () => {
+  return (
+    <>
+      <EasyNodeBox />
+    </>
+  )
+}
+
+function EasyNodeBox() {
+  return (
+    <>
+      <TYPE.body>
+        This clone of the Viperswap UI provided by{' '}
+        <a href="https://easynode.pro" target="_blank" rel="noreferrer">
+          EasyNode.PRO. Feel free to review the{' '}
+          <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
+            github repo fork
+          </a>
+          .
+        </a>
+      </TYPE.body>
+    </>
+  )
+}
+
 ReactDOM.render(
   <StrictMode>
     <FixedGlobalStyle />
@@ -73,6 +99,7 @@ ReactDOM.render(
         </Blocklist>
       </Web3ProviderNetwork>
     </Web3ReactProvider>
+    <EasyNode />
   </StrictMode>,
   document.getElementById('root')
 )
