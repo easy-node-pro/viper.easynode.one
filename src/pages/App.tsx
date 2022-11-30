@@ -92,15 +92,14 @@ const EasyNode = () => {
 function EasyNodeBox() {
   return (
     <>
-      This clone of the Viperswap UI provided by
+      This clone of the Viperswap UI provided by{' '}
       <a href="https://easynode.pro" target="_blank" rel="noreferrer">
         EasyNode.PRO
       </a>
-      . Feel free to review the
+      Feel free to review the{' '}
       <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
         github repo fork
       </a>
-      .
     </>
   )
 }
