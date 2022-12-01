@@ -96,10 +96,10 @@ function EasyNodeBox() {
   return (
     <>
       <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
-        This clone of the Viperswap UI provided by
+        This clone of the Viperswap UI provided by 
         <StyledInternalLink to="https://easynode.pro">EasyNode.PRO</StyledInternalLink>.
         <RowBetween />
-        Feel free to review the
+        Feel free to review the 
         <StyledInternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</StyledInternalLink>.
       </Text>
     </>
