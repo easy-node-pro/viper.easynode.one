@@ -104,11 +104,13 @@ function EasyNodeBox() {
               <a href="https://easynode.pro" target="_blank" rel="noreferrer">
                 EasyNode.PRO
               </a>
+              .
               <RowBetween />
               Feel free to review the{' '}
               <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
                 GitHub repo fork
               </a>
+              .
             </TYPE.small>
           </TYPE.subHeader>
         </AutoColumn>
