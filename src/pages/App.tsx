@@ -102,11 +102,16 @@ function EasyNodeBox() {
             <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px' }}>
               ⚡
             </span>{' '}
-            This clone of the Viperswap UI provided by{' '}
-            <ExternalLink to="https://easynode.pro">EasyNode.PRO</ExternalLink>.
+            <TYPE.small>This clone of the Viperswap UI provided by </TYPE.small>
+            <ExternalLink href="https://easynode.pro" target="_blank" rel="noreferrer">
+              <TYPE.small>EasyNode.PRO</TYPE.small>
+            </ExternalLink>
+            <TYPE.small>.</TYPE.small>
             <RowBetween />
-            Feel free to review the{' '}
-            <ExternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</ExternalLink>.
+            <TYPE.small>Feel free to review the </TYPE.small>
+            <ExternalLink href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
+              <TYPE.small>github repo fork</TYPE.small>
+            </ExternalLink>
           </TYPE.subHeader>
         </AutoColumn>
       </LightCard>
