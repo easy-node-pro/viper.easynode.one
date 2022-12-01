@@ -9,6 +9,7 @@ import Polling from '../components/Header/Polling'
 //import URLWarning from '../components/Header/URLWarning'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
+import { RowBetween } from '../components/Row'
 import { ApplicationModal } from '../state/application/actions'
 import { useModalOpen, useToggleModal } from '../state/application/hooks'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
@@ -97,7 +98,7 @@ function EasyNodeBox() {
       <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
         This clone of the Viperswap UI provided by
         <StyledInternalLink to="https://easynode.pro">EasyNode.PRO</StyledInternalLink>.
-        <br />
+        <RowBetween />
         Feel free to review the
         <StyledInternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</StyledInternalLink>.
       </Text>
