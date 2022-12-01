@@ -45,7 +45,7 @@ import { useActiveWeb3React } from '../hooks'
 //import usePlatformName from '../hooks/usePlatformName'
 import useBlockchain from '../hooks/useBlockchain'
 import { Text } from 'rebass'
-import { StyledInternalLink, ExternalLink, TYPE, HideSmall } from '../theme'
+import { StyledInternalLink } from '../theme'
 
 const AppWrapper = styled.div`
   display: flex;
