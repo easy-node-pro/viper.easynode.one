@@ -106,7 +106,6 @@ function EasyNodeBox() {
             <ExternalLink href="https://easynode.pro" target="_blank" rel="noreferrer">
               <TYPE.small>EasyNode.PRO</TYPE.small>
             </ExternalLink>
-            <TYPE.small>.</TYPE.small>
             <RowBetween />
             <TYPE.small>Feel free to review the </TYPE.small>
             <ExternalLink href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
