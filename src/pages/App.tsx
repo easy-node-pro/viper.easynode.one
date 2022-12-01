@@ -45,7 +45,7 @@ import { PIT_SETTINGS } from '../constants'
 import { useActiveWeb3React } from '../hooks'
 //import usePlatformName from '../hooks/usePlatformName'
 import useBlockchain from '../hooks/useBlockchain'
-import { TYPE, ExternalLink } from '../theme'
+import { TYPE } from '../theme'
 import { LightCard } from '../components/Card'
 import { AutoColumn } from '../components/Column'
 
