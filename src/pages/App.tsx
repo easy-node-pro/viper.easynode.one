@@ -99,15 +99,17 @@ function EasyNodeBox() {
       <LightCard>
         <AutoColumn gap="10px">
           <TYPE.subHeader style={{ textAlign: 'center' }}>
-            <TYPE.small>⚡ This clone of the Viperswap UI provided by </TYPE.small>
-            <ExternalLink href="https://easynode.pro" target="_blank" rel="noreferrer">
-              <TYPE.small>EasyNode.PRO</TYPE.small>
-            </ExternalLink>
-            <RowBetween />
-            <TYPE.small>Feel free to review the </TYPE.small>
-            <ExternalLink href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
-              <TYPE.small>GitHub repo fork</TYPE.small>
-            </ExternalLink>
+            <TYPE.small>
+              ⚡ This clone of the Viperswap UI provided by{' '}
+              <a href="https://easynode.pro" target="_blank" rel="noreferrer">
+                EasyNode.PRO
+              </a>
+              <RowBetween />
+              Feel free to review the{' '}
+              <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
+                GitHub repo fork
+              </a>
+            </TYPE.small>
           </TYPE.subHeader>
         </AutoColumn>
       </LightCard>
