@@ -47,6 +47,7 @@ import { useActiveWeb3React } from '../hooks'
 import useBlockchain from '../hooks/useBlockchain'
 import { TYPE, StyledInternalLink } from '../theme'
 import { LightCard } from '../components/Card'
+import { AutoColumn } from '../components/Column'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -96,16 +97,18 @@ function EasyNodeBox() {
   return (
     <>
       <LightCard>
-        <TYPE.subHeader style={{ textAlign: 'center' }}>
-          <span role="img" aria-label="wizard-icon">
-            ⚡
-          </span>{' '}
-          This clone of the Viperswap UI provided by{' '}
-          <StyledInternalLink to="https://easynode.pro">EasyNode.PRO</StyledInternalLink>.
-          <RowBetween />
-          Feel free to review the{' '}
-          <StyledInternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</StyledInternalLink>.
-        </TYPE.subHeader>
+        <AutoColumn gap="10px">
+          <TYPE.subHeader style={{ textAlign: 'center' }}>
+            <span role="img" aria-label="wizard-icon">
+              ⚡
+            </span>{' '}
+            This clone of the Viperswap UI provided by{' '}
+            <StyledInternalLink to="https://easynode.pro">EasyNode.PRO</StyledInternalLink>.
+            <RowBetween />
+            Feel free to review the{' '}
+            <StyledInternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</StyledInternalLink>.
+          </TYPE.subHeader>
+        </AutoColumn>
       </LightCard>
     </>
   )
