@@ -9,6 +9,7 @@ import Polling from '../components/Header/Polling'
 //import URLWarning from '../components/Header/URLWarning'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
+import { RowBetween } from '../components/Row'
 import { ApplicationModal } from '../state/application/actions'
 import { useModalOpen, useToggleModal } from '../state/application/hooks'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
@@ -44,6 +45,8 @@ import { PIT_SETTINGS } from '../constants'
 import { useActiveWeb3React } from '../hooks'
 //import usePlatformName from '../hooks/usePlatformName'
 import useBlockchain from '../hooks/useBlockchain'
+import { Text } from 'rebass'
+import { StyledInternalLink } from '../theme'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -80,6 +83,28 @@ const BodyWrapper = styled.div`
 const Marginer = styled.div`
   margin-top: 5rem;
 `
+
+const EasyNode = () => {
+  return (
+    <>
+      <EasyNodeBox />
+    </>
+  )
+}
+
+function EasyNodeBox() {
+  return (
+    <>
+      <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
+        This clone of the Viperswap UI provided by
+        <StyledInternalLink to="https://easynode.pro">EasyNode.PRO</StyledInternalLink>.
+        <RowBetween />
+        Feel free to review the
+        <StyledInternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</StyledInternalLink>.
+      </Text>
+    </>
+  )
+}
 
 function TopLevelModals() {
   const open = useModalOpen(ApplicationModal.ADDRESS_CLAIM)
@@ -179,6 +204,7 @@ export default function App() {
             </Switch>
           </Web3ReactManager>
           <Marginer />
+          <EasyNode />
         </BodyWrapper>
       </AppWrapper>
     </Suspense>
