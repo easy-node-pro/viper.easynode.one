@@ -99,10 +99,7 @@ function EasyNodeBox() {
       <LightCard>
         <AutoColumn gap="10px">
           <TYPE.subHeader style={{ textAlign: 'center' }}>
-            <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px' }}>
-              ⚡
-            </span>{' '}
-            <TYPE.small>This clone of the Viperswap UI provided by </TYPE.small>
+            <TYPE.small>⚡ This clone of the Viperswap UI provided by </TYPE.small>
             <ExternalLink href="https://easynode.pro" target="_blank" rel="noreferrer">
               <TYPE.small>EasyNode.PRO</TYPE.small>
             </ExternalLink>
