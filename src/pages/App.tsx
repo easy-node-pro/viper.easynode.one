@@ -109,7 +109,7 @@ function EasyNodeBox() {
             <RowBetween />
             <TYPE.small>Feel free to review the </TYPE.small>
             <ExternalLink href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
-              <TYPE.small>github repo fork</TYPE.small>
+              <TYPE.small>GitHub repo fork</TYPE.small>
             </ExternalLink>
           </TYPE.subHeader>
         </AutoColumn>
