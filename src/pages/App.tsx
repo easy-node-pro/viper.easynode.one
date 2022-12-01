@@ -44,6 +44,8 @@ import { PIT_SETTINGS } from '../constants'
 import { useActiveWeb3React } from '../hooks'
 //import usePlatformName from '../hooks/usePlatformName'
 import useBlockchain from '../hooks/useBlockchain'
+import { Text } from 'rebass'
+import { StyledInternalLink, ExternalLink, TYPE, HideSmall } from '../theme'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -92,15 +94,13 @@ const EasyNode = () => {
 function EasyNodeBox() {
   return (
     <>
-      This clone of the Viperswap UI provided by{' '}
-      <a href="https://easynode.pro" target="_blank" rel="noreferrer">
-        EasyNode.PRO
-      </a>
-      <br />
-      Feel free to review the{' '}
-      <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
-        github repo fork
-      </a>
+      <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
+        This clone of the Viperswap UI provided by
+        <StyledInternalLink to="https://easynode.pro">EasyNode.PRO</StyledInternalLink>.
+        <br />
+        Feel free to review the
+        <StyledInternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</StyledInternalLink>.
+      </Text>
     </>
   )
 }
