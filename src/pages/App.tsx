@@ -45,7 +45,7 @@ import { PIT_SETTINGS } from '../constants'
 import { useActiveWeb3React } from '../hooks'
 //import usePlatformName from '../hooks/usePlatformName'
 import useBlockchain from '../hooks/useBlockchain'
-import { TYPE, StyledInternalLink } from '../theme'
+import { TYPE, ExternalLink } from '../theme'
 import { LightCard } from '../components/Card'
 import { AutoColumn } from '../components/Column'
 
@@ -103,10 +103,10 @@ function EasyNodeBox() {
               ⚡
             </span>{' '}
             This clone of the Viperswap UI provided by{' '}
-            <StyledInternalLink to="https://easynode.pro">EasyNode.PRO</StyledInternalLink>.
+            <ExternalLink to="https://easynode.pro">EasyNode.PRO</ExternalLink>.
             <RowBetween />
             Feel free to review the{' '}
-            <StyledInternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</StyledInternalLink>.
+            <ExternalLink to="https://github.com/easy-node-pro/frontend">github repo fork</ExternalLink>.
           </TYPE.subHeader>
         </AutoColumn>
       </LightCard>
