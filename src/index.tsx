@@ -26,8 +26,16 @@ if (!!window.ethereum) {
   window.ethereum.autoRefreshOnNetworkChange = false
 }
 
-ReactGA.initialize(process.env.REACT_GA4)
-ReactGA.send('pageview')
+const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
+if (typeof GOOGLE_ANALYTICS_ID === 'string') {
+  ReactGA.initialize(process.env.REACT_GA4)
+  ReactGA.send('pageview')
+  ReactGA.set({
+    customBrowserType: !isMobile ? 'desktop' : 'web3' in window || 'ethereum' in window ? 'mobileWeb3' : 'mobileRegular'
+  })
+} else {
+  ReactGA.initialize('test', { testMode: true, debug: true })
+}
 
 window.addEventListener('error', error => {
   ReactGA.exception({
