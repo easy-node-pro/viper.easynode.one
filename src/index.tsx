@@ -29,7 +29,6 @@ if (!!window.ethereum) {
 const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
 if (typeof GOOGLE_ANALYTICS_ID === 'string') {
   ReactGA.initialize(process.env.REACT_GA4)
-  ReactGA.send('pageview')
   ReactGA.set({
     customBrowserType: !isMobile ? 'desktop' : 'web3' in window || 'ethereum' in window ? 'mobileWeb3' : 'mobileRegular'
   })
