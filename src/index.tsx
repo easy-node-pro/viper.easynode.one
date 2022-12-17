@@ -26,8 +26,8 @@ if (!!window.ethereum) {
   window.ethereum.autoRefreshOnNetworkChange = false
 }
 
-const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
-if (typeof GOOGLE_ANALYTICS_ID === 'string') {
+const REACT_GA4: string | undefined = process.env.REACT_GA4
+if (typeof REACT_GA4 === 'string') {
   ReactGA.initialize(process.env.REACT_GA4)
   ReactGA.set({
     customBrowserType: !isMobile ? 'desktop' : 'web3' in window || 'ethereum' in window ? 'mobileWeb3' : 'mobileRegular'
