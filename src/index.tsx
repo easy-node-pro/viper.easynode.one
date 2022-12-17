@@ -26,15 +26,22 @@ if (!!window.ethereum) {
   window.ethereum.autoRefreshOnNetworkChange = false
 }
 
-const REACT_GA4: string | undefined = process.env.REACT_GA4
-if (typeof REACT_GA4 === 'string') {
-  ReactGA.initialize(process.env.REACT_GA4)
+const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_GA
+if (typeof GOOGLE_ANALYTICS_ID === 'string') {
+  ReactGA.initialize(GOOGLE_ANALYTICS_ID)
   ReactGA.set({
     customBrowserType: !isMobile ? 'desktop' : 'web3' in window || 'ethereum' in window ? 'mobileWeb3' : 'mobileRegular'
   })
 } else {
   ReactGA.initialize('test', { testMode: true, debug: true })
 }
+
+window.addEventListener('error', error => {
+  ReactGA.exception({
+    description: `${error.message} @ ${error.filename}:${error.lineno}:${error.colno}`,
+    fatal: true
+  })
+})
 
 window.addEventListener('error', error => {
   ReactGA.exception({
