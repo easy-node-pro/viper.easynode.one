@@ -1,4 +1,10 @@
-# Frontend
+# Viper by Easy Node
+We saw a lot of requests to easily break LP and swap funds so we fired up a site, the original app readme is below.  
+
+## Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e85b1faf-8489-447e-8594-5306fbfb31dd/deploy-status)](https://app.netlify.com/sites/vipereasynode/deploys)
+
+# Viper Frontend
 
 ## Development
 
