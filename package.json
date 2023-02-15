@@ -105,7 +105,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:service-worker": "yarn build && yarn serve -s build",
+    "start:service-worker": "yarn serve -s build",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
