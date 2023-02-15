@@ -103,20 +103,20 @@ function EasyNodeBox() {
               ⚡ This clone of the Viperswap UI provided by{' '}
               <a href="https://easynode.pro" target="_blank" rel="noreferrer">
                 EasyNode.PRO
-              </a>
-              .
+              </a>{' '}
+              ⚡
               <RowBetween />
               <RowBetween />
-              Questions? Join our discord community{' '}
+              Questions? Join our{' '}
               <a href="https://bit.ly/easynodediscord" target="_blank" rel="noreferrer">
-                here
+                Discord Community
               </a>
               .
               <RowBetween />
               <RowBetween />
               Feel free to review the{' '}
               <a href="https://github.com/easy-node-pro/frontend" target="_blank" rel="noreferrer">
-                GitHub repo fork
+                GitHub Repository
               </a>
               .
             </TYPE.small>
