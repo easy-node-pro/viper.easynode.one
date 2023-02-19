@@ -165,7 +165,7 @@ export const COMMON_CONTRACT_NAMES: { [address: string]: string } = {
 }
 
 export const FALLBACK_GAS_LIMIT = BigNumber.from('6721900')
-export const DEFAULT_GAS_PRICE = BigNumber.from('30000000000') // 30 gwei
+export const DEFAULT_GAS_PRICE = BigNumber.from('100000000000') // 100 gwei
 
 // TODO: specify merkle distributor for mainnet
 export const MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
