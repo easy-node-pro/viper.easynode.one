@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 //import { Blockchain } from '@venomswap/sdk'
-//import { Send, Code, MessageSquare, BarChart2, Book, Twitter, Repeat } from 'react-feather'
 import { BarChart2 } from 'react-feather'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import styled from 'styled-components'
